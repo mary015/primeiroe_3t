@@ -26,12 +26,17 @@ function escreva(){
     }
  }
  function quadrado (){
-     for(let  i = 1; i<=1000; i +++){
+     for(let  i = 1; i<=1000; i++){
          document.write("O quadrado de "+i+ "é" + (i*i)+ "<br>");
+          }
      }
+     function calcula(){
+        let val = document.getElementById ("valor").value; 
+        let val = document.getElementById ("valor").value; 
+        let t= document.getElementById ("meses").value;
 
-        }
- 
+        let res = val * (1+(j/100));
 
-
-
+        document.write( "Resultado:" +res);
+    }
+        
