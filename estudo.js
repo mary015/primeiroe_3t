@@ -39,4 +39,26 @@ function escreva(){
 
         document.write( "Resultado:" +res);
     }
-        
+        function somaNota(){
+            let n1 = document.getElementById("t1").value;
+            let n2 = document.getElementById("t2").value;
+            let n3 = document.getElementById("t3").value;
+            let r = Number(n1) + Number(n2) + Number(n3);
+            document.getElementById("resultado").innerHTML = "Soma: " + r;
+
+ }
+
+ function media(){
+    let n1 = document.getElementById("n1").value;
+    let n2 = document.getElementById("n2").value;
+    let n3 = document.getElementById("n3").value;
+    let r = Number(n1) + Number(n2) + Number(n3) / 3;
+    document.getElementById("resultado").innerHTML = r;
+ }
+ function falta(){
+    let n1 = document.getElementById("n1").value;
+    let n2 = document.getElementById("n2").value;
+    let n3 = document.getElementById("n3").value;
+    let r = Number(n1) + Number(n2) + Number(n3) - 180;
+    document.getElementById("resultado").innerHTML = r;
+ }
