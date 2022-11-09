@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-widh , initial-scale=1.0">
-    <title>Primeiro E</title>
-    <script src="estudo.js"></script>
 
-    <link rel="stylesheet"  href=" geral.css ">
+<head>
+  <meta charset="utf-8">
+  <meta http-equv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-widh , initial-scale=1.0">
+  <title>Primeiro E</title>
+  <script src="estudo.js"></script>
+  <link rel="stylesheet" href="geral.css">
+</head>
 
-  </head>
-
-  <body>
-    <div class= "calculadora"> 
-      <div id= "psTotal">
-      <span id="total">Total: 0,00</span><br>
+<body>
+  <input type="checkbox" id="calcFin">
+  <div class="calculadora">
+    <label for="calcFin">
+      <h3>Financeira</h3>
+    </label>
+    <div class="calcF">
+      <div id="psTotal">
+        <span id="total">Total: 0,00</span><br>
       </div>
-    Valor: <input id="valor" placeholder="Digite o capital" type="text"><br>
-    Juros(Mensal): <input id="juros" placeholder=" % Juros" type="text"><br>
-    Nr. Meses: <input id="meses" placeholder="tempo"  type="text"><br>
-    <button id= "btnCalc" onclick="calcula()">Enviar</button><br>
-    <div class="spmes">
-    <span id="mes"></span>
-  </div>
-    
-  </div>
 
-    <br><br><br>
-
-   
+      Valor: <input id="valor" placeholder="Capital" type="text"><br>
+      Juros(Mensal): <input id="juros" placeholder="% Juros" type="text"><br>
+      Nr. Meses: <input id="meses" placeholder="tempo" type="text"><br>
+      <button id="btnCalc" onclick="calcula()">Enviar</button><br>
+      <div>
+        <span id="mes">Mês a Mês</span>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
