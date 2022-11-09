@@ -1,52 +1,56 @@
 body {
-    margin:0;
-    padding:0;
-
+    margin: 0;
+    padding: 0;
 }
 .calculadora {
-    background:rgb(26, 51, 133);
+    background: rgb(9, 43, 235);
     width: 200px;
-    color: silver;
-    padding: 10px;
+    color: white;
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 10px 10px mediumspringgreen;
+    box-shadow: 10px 10px rgb(0, 0, 0);
 }
-
 .calculadora input {
-    background: rgb(201, 191, 191);
-    color: rgb(15, 1, 1);
-
+    background: rgb(32, 31, 31);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.calc {
+    display: none;
+}
+#calcfin:checked + .calculadora{
+    display: block;
+}
+.calculadora input:focus{
+    background-color: bisque;
+    color: blue;
+}
+#btnCalc {
+    background: yellowgreen;
+    margin-top: 20px;
+    padding: 5px;
+}
+#btnCalc:hover {
+    background: rgb(171, 255, 3);
+    color: red;
+    cursor: pointer;
 }
 #psTotal {
     background: black;
-    color: springgreen;
+    color: yellow;
     padding: 10px;
     margin-bottom: 10px;
-    border-radius: 5px;
-
+    border-radius: 20px;
 }
-
-#btnCalc{
-    background: silver;
-    margin-top: 20px;
-    padding: 5px;
-
-}
-#btnCalc:hover {
-    background: slateblue;
-    color: springgreen;
-    cursor: pointer;
-}
-
 .spmes {
     width: 100%;
-    background: mediumvioletred;
+    background: purple;
     color: white;
     border-radius: 4px;
     border-style: dashed;
+    border-color: white;
     border-width: 2px;
     margin-top: 10px;
-
-
 }
